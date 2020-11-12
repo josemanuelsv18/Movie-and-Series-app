@@ -1,0 +1,17 @@
+{
+  "name": "movie-and-series-app",
+  "version": "1.0.0",
+  "description": "Aplicación de recomendación de  peliculas y series populares usando la API de TheMovieDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Movie",
+    "Series",
+    "TheMovieDB",
+    "recomendations"
+  ],
+  "author": "Josemanuel Sifontes Viloria",
+  "license": "MIT"
+}
