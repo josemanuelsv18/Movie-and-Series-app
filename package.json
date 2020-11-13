@@ -4,7 +4,7 @@
   "description": "Aplicación de recomendación de  peliculas y series populares usando la API de TheMovieDB",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html assets/**/*.html"
   },
   "keywords": [
     "Movie",
@@ -14,7 +14,11 @@
   ],
   "author": "Josemanuel Sifontes Viloria",
   "license": "MIT",
-  "Devdependencies": {
-    "live-server": "^1.2.1"
-  }
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.0.5"
+  },
+  "browsersList": [
+    "last 1 chrome version"
+  ]
 }
