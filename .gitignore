@@ -2,3 +2,5 @@ node_modules
 apiKey.txt
 dist
 .cache
+*.jpg
+*.png

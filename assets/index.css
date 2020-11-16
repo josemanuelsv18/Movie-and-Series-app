@@ -1,3 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
 
+.header {
+  background-color: #14274e;
+  color: #f1f6f9;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.header img {
+  margin: 10px 0px 10px 5px;
+  height: 50px;
+  padding: 8px;
+  border: #fff solid 3px;
+  border-radius: 50%;
+}
+.header h2 {
+  margin: 10px 0px 10px 15px;
+  font-size: 32px;
+  justify-self: left;
+  font-weight: bold;
+}
+.header .header__menu {
+  list-style: none;
+  margin: 10px 0px 10px 35px;
+  padding: 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.header .header__menu a .header__menu--element {
+  padding: 5px 5vw;
+  border-radius: 25px;
+}
+.header .header__menu a:hover {
+  font-weight: bold;
+  color: #14274e;
+}
+.header .header__menu a:hover .header__menu--element {
+  background-color: #f1f6f9;
+}
+
+.main {
+  background-image: url("https://imgur.com/ydjjnxU.jpg");
+  background-size: 60%;
+  position: relative;
+  z-index: 1;
+  height: 75vh;
+}
+.main .main__layer {
+  background-color: rgba(20, 39, 78, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.main .main__layer .main__layer--button {
+  background-color: #f1f6f9;
+  color: #14274e;
+  outline: none;
+  border: none;
+  font-family: "nunito", sans-serif;
+  font-size: 20px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.main .main__layer .main__layer--button:hover {
+  background-color: #14274e;
+  color: #f1f6f9;
+  font-weight: bolder;
+  padding: 15px 55px;
+  margin-bottom: 47.5;
+}
+
+.info {
+  background-color: #394867;
+  color: #fff;
+}
+.info .info__parrafo--p {
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.footer {
+  background-color: #9ba4b4;
+}
+.footer .footer__list {
+  margin: 0;
+}
 
 /*# sourceMappingURL=index.css.map */
