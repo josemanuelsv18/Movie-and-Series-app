@@ -4,6 +4,17 @@ $blueGrey: #394867;
 $lightGrey: #9ba4b4;
 $white: #fff;
 $black: #000;
+@mixin menuList($width, $padding: 0){
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: $padding;
+    width: $width;
+}
+@mixin menuListElement() {
+    color: $boneWhite;
+    text-decoration: none;
+}
 body{
     margin: 0;
     font-family: 'Nunito', sans-serif;
@@ -28,16 +39,15 @@ body{
         justify-self: left;
         font-weight: bold;
     }
-    .header__menu{
-        list-style: none;
+    .header__menu{ 
         margin: 10px 0px 10px 35px;
-        padding: 0;
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
+        @include menuList(60%);
+        #home{
+            text-decoration: underline;
+        }
         a{
-            color: $white;
-            text-decoration: none;
+            @include menuListElement();
+            font-size: 20px;
             .header__menu--element{
                 padding: 5px 5vw;
                 border-radius: 25px;
@@ -74,7 +84,7 @@ body{
             outline: none;
             border: none;
             font-family: 'nunito', sans-serif;
-            font-size: 20px;
+            font-size: 26px;
             padding: 10px 50px;
             border-radius: 10px;
             margin-bottom: 50px;
@@ -94,14 +104,58 @@ body{
 .info{
     background-color: $blueGrey;
     color: $white;
-    .info__parrafo--p{
-        margin: 0px;
-        padding: 10px 0px;
+    .info__parrafo{
+        display: grid;
+        grid-template-columns: 2.5% 43.75% 5% 43.75% 5%;
+        grid-template-rows: 15px 150px 25px 150px 25px;
+        .info__parrafo--match{
+            background-color: $lightGrey;
+            padding: 5px 0px 0px 5px;
+            border-radius: 25px;
+            box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.75);
+        }
+        #info__parrafo--1{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            display: flex;
+        }
+        #info__parrafo--2{
+            grid-column:  4 / 5;
+            grid-row: 2 / 3;
+            display: flex;
+        }
+        #info__parrafo--3{
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            display: flex;
+        }
+        #info__parrafo--4{
+            grid-column: 4 / 5;
+            grid-row: 4 / 5;
+            display: flex;
+        }
+        .info__parrafo--p{
+            margin: 0px 0px 0px 8px;
+            padding: 10px 0px;
+        }
+        .info__parrafo--img{
+            width: 60px;
+            height: 60px;
+        }
     }
 }
 .footer{
     background-color: $lightGrey;
+    padding: 10px 0px;
     .footer__list{
+        @include menuList(95%, 30px);
         margin: 0;
+        a{
+            @include menuListElement();
+        }
+        a:hover{
+          text-decoration: underline;
+          font-weight: bold;  
+        }
     }
 }
