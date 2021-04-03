@@ -49,7 +49,7 @@ body{
             @include menuListElement();
             font-size: 20px;
             .header__menu--element{
-                padding: 5px 5vw;
+                padding: 5px 4.5vw;
                 border-radius: 25px;
             }
         }
@@ -63,7 +63,7 @@ body{
     }
 }
 .main{
-    background-image: url("https://imgur.com/ydjjnxU.jpg");
+    background-image: url("https://imgur.com/aPMml8N.jpg");
     background-size: 60%;
     position: relative;
     z-index: 1;
@@ -106,8 +106,10 @@ body{
     color: $white;
     .info__parrafo{
         display: grid;
+        // grid-template-columns: 2.5% 43.75% 5% 43.75% 5%;
+        // grid-template-rows: 15px 150px 25px 150px 25px;
         grid-template-columns: 2.5% 43.75% 5% 43.75% 5%;
-        grid-template-rows: 15px 150px 25px 150px 25px;
+        grid-template-rows: 15px 150px 50px;
         .info__parrafo--match{
             background-color: $lightGrey;
             padding: 5px 0px 0px 5px;
@@ -135,8 +137,9 @@ body{
             display: flex;
         }
         .info__parrafo--p{
-            margin: 0px 0px 0px 8px;
+            margin: 0px 15px 0px 8px;
             padding: 10px 0px;
+            text-align: justify;
         }
         .info__parrafo--img{
             width: 60px;

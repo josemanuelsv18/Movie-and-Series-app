@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  background-color: #14274e;
+  color: #f1f6f9;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.header img {
+  margin: 10px 0px 10px 5px;
+  height: 50px;
+  padding: 8px;
+  border: #fff solid 3px;
+  border-radius: 50%;
+}
+.header h2 {
+  margin: 10px 0px 10px 15px;
+  font-size: 32px;
+  justify-self: left;
+  font-weight: bold;
+}
+.header .header__menu {
+  margin: 10px 0px 10px 35px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 60%;
+}
+.header .header__menu a {
+  color: #f1f6f9;
+  text-decoration: none;
+  font-size: 20px;
+}
+.header .header__menu a .header__menu--element {
+  padding: 5px 4.5vw;
+  border-radius: 25px;
+}
+.header .header__menu a:hover {
+  font-weight: bold;
+  color: #14274e;
+}
+.header .header__menu a:hover .header__menu--element {
+  background-color: #f1f6f9;
+}
+
+/*# sourceMappingURL=movie.css.map */

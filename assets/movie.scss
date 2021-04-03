@@ -1,0 +1,61 @@
+$boneWhite: #f1f6f9;
+$darkBlue: #14274e;
+$blueGrey: #394867;
+$lightGrey: #9ba4b4;
+$white: #fff;
+$black: #000;
+@mixin menuList($width, $padding: 0){
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: $padding;
+    width: $width;
+}
+@mixin menuListElement() {
+    color: $boneWhite;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.header{
+    background-color: $darkBlue;
+    color: $boneWhite;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    img{
+        margin: 10px 0px 10px 5px;
+        height: 50px;
+        padding: 8px;
+        border: $white solid 3px;
+        border-radius: 50%;
+    }
+    h2{
+        margin: 10px 0px 10px 15px;
+        font-size: 32px;
+        justify-self: left;
+        font-weight: bold;
+    }
+    .header__menu{ 
+        margin: 10px 0px 10px 35px;
+        @include menuList(60%);
+        a{
+            @include menuListElement();
+            font-size: 20px;
+            .header__menu--element{
+                padding: 5px 4.5vw;
+                border-radius: 25px;
+            }
+        }
+        a:hover{
+            font-weight: bold;
+            color: $darkBlue;
+            .header__menu--element{
+                background-color: $boneWhite;
+            }
+        }
+    }
+}

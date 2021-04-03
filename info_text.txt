@@ -1,0 +1,1 @@
+Recommertainment from recommendation and Entertainment is a web app that takes public APIs from diferents databases and web pages to give our users the best recommendation in movies, series and anime. You can easily access to the most popular or best rated movies and series in a period of time or at all; see where to watch it and extra info about it.
