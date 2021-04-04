@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="https://imgur.com/xzXkE3x.png" alt="logo" class="header__logo--img">
+        <img src="../assets/icon_movie_white.png" alt="logo" class="header__logo--img">
         <h2 class="header__logo--name">Recommertainment</h2>
     <ul class="header__menu">
         <a href="../index.html" id="home"><li class="header__menu--element">Home</li></a>
@@ -22,6 +22,31 @@
         <a href="#"><li class="header__menu--element">About...</li></a>
     </ul>
 </header>
+<section class="sideMenu">
+    <label for="multimedia" class="sideMenu__label">What you want to watch?</label>
+    <select class="sideMenu__select">
+        <option class="sideMenu__select--option">Movies</option>
+        <option class="sideMenu__select--option">Series</option>
+        <option class="sideMenu__select--option">Anime</option>
+        <option class="sideMenu__select--option">All</option>    
+    </select>
+    <label for="Clasification" class="sideMenu__label">Show:</label>
+    <select class="sideMenu__select">
+        <option class="sideMenu__select--option">Top rated movies</option>
+        <option class="sideMenu__select--option">Most Popular movies</option>
+    </select>
+    <label for="time" class="sideMenu__label">From:</label>
+    <select class="sideMenu__select">
+        <option class="sideMenu__select--option">This week</option>
+        <option class="sideMenu__select--option">This month</option>
+        <option class="sideMenu__select--option">This year</option>
+        <option class="sideMenu__select--option">All time</option>
+    </select>
+    <button class="sideMenu__button" id="SearchButton">Search</button>
+</section>
+<section class="main">
+    
+</section>
     <script src="movie.js"></script>
 </body>
 </html>

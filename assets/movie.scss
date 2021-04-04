@@ -18,6 +18,7 @@ $black: #000;
 body{
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    background-color: $white;
 }
 .header{
     background-color: $darkBlue;
@@ -57,5 +58,49 @@ body{
                 background-color: $boneWhite;
             }
         }
+    }
+}
+.sideMenu{
+    background-color: rgba($color: $blueGrey, $alpha: 0.85);
+    width: 25%;
+    height: 84.28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .sideMenu__label{
+        margin: 5px 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white
+    }
+    .sideMenu__select{
+        margin: 5px 0px;
+        width: 75%;
+        padding: 10px 0px;
+        border-radius: 25px;
+        background-color: rgba($color: white, $alpha: 0.95);
+        text-align-last: center;
+        font-size: 16px; 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    .sideMenu__select:hover{
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .sideMenu__button{
+        margin: 10px 0px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: $boneWhite;
+        color: black;
+        border: none;
+        box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.45);;
+    }
+    .sideMenu__button:hover{
+        cursor: pointer;
     }
 }
