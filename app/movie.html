@@ -22,29 +22,34 @@
         <a href="#"><li class="header__menu--element">About...</li></a>
     </ul>
 </header>
-<section class="sideMenu">
+<section class="sideMenu" id="sideMenu">
     <label for="multimedia" class="sideMenu__label">What you want to watch?</label>
-    <select class="sideMenu__select">
-        <option class="sideMenu__select--option">Movies</option>
-        <option class="sideMenu__select--option">Series</option>
-        <option class="sideMenu__select--option">Anime</option>
-        <option class="sideMenu__select--option">All</option>    
+    <select class="sideMenu__select" id="selectMultimedia">
+        <option value="" class="sideMenu__select--option">Chose one</option>
+        <option value="movies" class="sideMenu__select--option">Movies</option>
+        <option value="series" class="sideMenu__select--option">Series</option>
+        <option value="anime" class="sideMenu__select--option">Anime</option>
+        <option value="all" class="sideMenu__select--option">All</option>    
     </select>
     <label for="Clasification" class="sideMenu__label">Show:</label>
-    <select class="sideMenu__select">
-        <option class="sideMenu__select--option">Top rated movies</option>
-        <option class="sideMenu__select--option">Most Popular movies</option>
+    <select class="sideMenu__select" id="selectClassification">
+        <option value="" class="sideMenu__select--option">Chose one</option>
+        <option value="rated" class="sideMenu__select--option">Top rated movies</option>
+        <option value="popular" class="sideMenu__select--option">Most Popular movies</option>
     </select>
     <label for="time" class="sideMenu__label">From:</label>
-    <select class="sideMenu__select">
-        <option class="sideMenu__select--option">This week</option>
-        <option class="sideMenu__select--option">This month</option>
-        <option class="sideMenu__select--option">This year</option>
-        <option class="sideMenu__select--option">All time</option>
+    <select class="sideMenu__select" id="selectTime">
+        <option value="" class="sideMenu__select--option">Chose one</option>
+        <option value="week" class="sideMenu__select--option">This week</option>
+        <option value="month" class="sideMenu__select--option">This month</option>
+        <option value="year" class="sideMenu__select--option">This year</option>
+        <option value="allTime" class="sideMenu__select--option">All time</option>
     </select>
-    <button class="sideMenu__button" id="SearchButton">Search</button>
+    <button class="sideMenu__button" id="searchButton">Search</button>
+    <ul class="sideMenu__ul" id="sideMenu__ul">
+    </ul>
 </section>
-<section class="main">
+<section class="main" id="main">
     
 </section>
     <script src="movie.js"></script>
